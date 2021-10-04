@@ -7,4 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 mercury = Info.create(explanation:"hello");
 
-Comment.create(title:"so cool", info: mercury)
+Comment.create(title:"so cool", description:"the red planet", info: mercury)
