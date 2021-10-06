@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-mercury = Info.create(explanation:"hello");
+mercury = Info.create(title:"wow", explanation:"hello");
+venus = Info.create(title:"closest planet!", explanation:"aplanet!" )
 
 Comment.create(title:"so cool", description:"the red planet", info: mercury)
+Comment.create(title:"nice", description:"planets are cool", info: venus)
