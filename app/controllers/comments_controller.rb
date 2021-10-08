@@ -16,6 +16,7 @@ class CommentsController < ApplicationController
 
     def show
         comment = Comment.find_by_id(comment_params)
+        render json: comment
     end
 
     private
