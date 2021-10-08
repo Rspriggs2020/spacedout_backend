@@ -14,6 +14,10 @@ class CommentsController < ApplicationController
         end
     end
 
+    def show
+        comment = Comment.find_by_id(comment_params)
+    end
+
     private
 
     def comment_params
