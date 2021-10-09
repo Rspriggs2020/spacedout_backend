@@ -10,7 +10,7 @@ class CommentsController < ApplicationController
         if comment.save 
             render json: comment
         else
-            render json: {error: "Comment couldn't be created"}
+            render json: {error: "Comment could not be created"}
         end
     end
 
@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
 
     def destroy
         comment = Comment.find_by_id(params[:id])
-        comment.delete
+        comment.destroy
     end
 
     def update
@@ -29,7 +29,7 @@ class CommentsController < ApplicationController
         if comment.update(comment_params)
             render json: comment
         else
-            render json: {error: "Couldn't edit comment"}
+            render json: {error: "Could not edit comment"}
         end
     end
 
