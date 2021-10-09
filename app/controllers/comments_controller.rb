@@ -19,6 +19,15 @@ class CommentsController < ApplicationController
         render json: comment
     end
 
+    def destroy
+        comment = comment.find_by_id(params[:id])
+        comment.delete
+    end
+
+    def edit
+        comment = Comment.find_by_id(:id)
+    end
+
     private
 
     def comment_params
