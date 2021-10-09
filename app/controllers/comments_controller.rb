@@ -15,17 +15,22 @@ class CommentsController < ApplicationController
     end
 
     def show
-        comment = Comment.find_by_id(comment_params)
+        comment = Comment.find_by_id(params[:id])
         render json: comment
     end
 
     def destroy
-        comment = comment.find_by_id(params[:id])
+        comment = Comment.find_by_id(params[:id])
         comment.delete
     end
 
-    def edit
-        comment = Comment.find_by_id(:id)
+    def update
+        comment = Comment.find_by_id(params[:id])
+        if comment.update(comment_params)
+            render json: comment
+        else
+            render json: {error: "Couldn't edit comment"}
+        end
     end
 
     private
