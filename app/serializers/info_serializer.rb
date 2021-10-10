@@ -1,5 +1,5 @@
 class InfoSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :id, :image, :date, :caption, :centroid_coordinates, :dscovr_j2000_position, :lunar_j2000_position, :sun_j2000_position, :attitude_quaternions
+  attributes :id, :name, :galaxy, :moons, :mass, :gravity, :discoveryDate
   has_many :comments
 end

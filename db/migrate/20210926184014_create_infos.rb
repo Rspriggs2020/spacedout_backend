@@ -1,15 +1,12 @@
 class CreateInfos < ActiveRecord::Migration[6.1]
   def change
     create_table :infos do |t|
-      t.string :image
-      t.string :date
-      t.string :caption
-      t.string :centroid_coordinates
-      t.string :dscovr_j2000_position
-      t.string :lunar_j2000_position
-      t.string :sun_j2000_position
-      t.string :attitude_quaternions
-
+      t.string :name
+      t.string :galaxy
+      t.string :moons
+      t.string :mass
+      t.string :gravity
+      t.string :discoveryDate
       t.timestamps
     end
   end
