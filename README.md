@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to SpacedOut backend code!
 
-Things you may want to cover:
+Here you will find, migrations, seeds, serializers, and controllers.
 
-* Ruby version
+Although it contains very little logic, it sets up the whole API to function.
 
-* System dependencies
+Clone along with SpacedOut frontend to get started!
 
-* Configuration
+To the stars!
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
